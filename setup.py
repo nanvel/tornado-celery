@@ -23,9 +23,6 @@ install_requires = ['celery', 'tornado']
 dependency_links = []
 
 if sys.version_info[0] >= 3:
-    dependency_links.append(
-        'https://github.com/renshawbay/pika-python3/archive/python3.zip#egg=pika-python3'
-    )
     install_requires.append('python3-pika')
 else:
     install_requires.append('pika')
